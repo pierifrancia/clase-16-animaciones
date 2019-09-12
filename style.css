@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body {
+    margin: none;
+    font-family: 'Manjari', sans-serif;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 35px;  
+    margin: 5px;  
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/17/12/24/green-1747541_960_720.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: auto 200px;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#cactus {
+    background-image: url(http://d26lpennugtm8s.cloudfront.net/stores/246/246/products/cactus-medianos-variedad-d_nq_np_853811-mla20648054698_032016-f11-67f22221084ca286bd15132934335911-640-0.jpg);
+}
+
+#alegria {
+    background-image: url(https://i.pinimg.com/originals/eb/99/c4/eb99c4c49d08e5752710503bc6d4e65a.jpg);
+}
+
+#violeta {
+    background-image: url(http://hablemosdeflores.com/wp-content/uploads/2017/07/Violeta-de-los-Alpes15.jpg);
+}
+
+span {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(rgba(0,50,0,0.6), rgba(0,25,255,0.6));
+    transform: translateY(200px);
+}
+
+.imagen:hover .overlay {
+transform: translateY(0px);
+transition: 1s;
+}
